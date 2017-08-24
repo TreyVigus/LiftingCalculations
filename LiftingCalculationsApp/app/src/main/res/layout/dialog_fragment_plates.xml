@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <ImageButton
+        android:id="@+id/imageButton_addPlates"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextEnterNewPlate"
+        app:layout_constraintRight_toRightOf="@+id/btnDeletePlate"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/btnDeletePlate"
+        app:layout_constraintTop_toTopOf="@+id/editTextEnterNewPlate" />
+
+    <EditText
+        android:id="@+id/editTextEnterNewPlate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:hint="@string/text_enter_new_plate"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textSize="12sp"
+        app:layout_constraintRight_toLeftOf="@+id/imageButton_addPlates"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/editTextDeleteCustomPlate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_delete_plate"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:layout_marginEnd="11dp"
+        app:layout_constraintRight_toLeftOf="@+id/btnDeletePlate"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginTop="37dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEnterNewPlate" />
+
+    <ImageButton
+        android:id="@+id/btnDeletePlate"
+        android:layout_width="17dp"
+        android:layout_height="19dp"
+        app:srcCompat="@android:drawable/ic_delete"
+        android:layout_marginEnd="65dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextDeleteCustomPlate"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextDeleteCustomPlate" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_plate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="7dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

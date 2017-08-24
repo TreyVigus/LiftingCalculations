@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">LiftingTools</string>
+    <string name="btnShowPlatesText">Show Plates</string>
+    <string name="editTextEnterWeight">Weight:</string>
+    <string name="text_button_calc_weight">Calculate Weight</string>
+    <string name="text_bar_weight">Bar Weight:</string>
+    <string name="text_result_label">Plates you\'ll need on one side of the bar: </string>
+    <string name="text_plate_type_label">Plates in use: </string>
+    <string name="text_enter_new_plate">Enter plate to add </string>
+    <string name="title_settings">Manage Plates </string>
+    <string name="text_weight_lifted">Weight lifted: </string>
+    <string name="text_reps_performed">Reps performed: </string>
+    <string name="text_enter_rep_max">Enter desired rep max (type 1 for one rep max)</string>
+    <string name="text_calculate_rep_max">Calculate </string>
+    <string name="text_enter_deload_weight">Weight you want to deload: </string>
+    <string name="text_enter_deload_percent">Percent to deload by: </string>
+    <string name="text_launch_PlateCalculator">Plate Calculator </string>
+    <string name="text_launch_RM_Calculator">Rep Max Calculator </string>
+    <string name="text_launch_Deload_Calculator">Deload Calculator </string>
+    <string name="text_launch_Lift_Logger">Lift Logger </string>
+    <string name="text_launch_Set_Tracker">Set Tracker and Timer </string>
+    <string name="text_desired_rep_max">Desired Rep Max: </string>
+    <string name="txt_btn_showDeloadPlates">Show Plates Required For Deloaded Weight </string>
+    <string name="txt_btn_showRMPlates">Show Plates Required For This RM </string>
+    <string name="text_current_set">Sets Completed:</string>
+    <string name="txt_show_RM_percent">Show Percent of Rep Max </string>
+    <string name="inexact_dialog_title">"Your weight could not be exactly represented" </string>
+    <string name="dialog_title_deload_percent">"Select Percent of this Rep Max" </string>
+    <string name="txt_start">"Start" </string>
+    <string name="txt_stop">"Pause" </string>
+    <string name="txt_reset">"Reset" </string>
+    <string name="txt_full">"full" </string>
+    <string name="txt_one_side">"one side " </string>
+    <string name="txt_delete_plate">"Enter plate to delete " </string>
+    <string name="long_message_deload_calculator">"Deloading is reducing the amount of weight by a certain percentage.\n \nSo, for example, if you want 80 percent of your 1 rep max, then you need to deload your one rep max by 20 percent."</string>
+    <string name="long_message_plate_calculator">"When entering your weight, select 'full' if you want to enter the entire weight(including the bar), and select 'one side' if you only want to enter the weight on one side of the bar."</string>
+    <string name="txtZero">"Reset Sets"</string>
+
+
+</resources>
