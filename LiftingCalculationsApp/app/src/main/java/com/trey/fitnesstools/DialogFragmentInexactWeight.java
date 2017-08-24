@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
+
+
 public class DialogFragmentInexactWeight extends DialogFragment
 {
     private double estimatedWeight;
@@ -24,7 +26,8 @@ public class DialogFragmentInexactWeight extends DialogFragment
 
         View v = LayoutInflater.from(getActivity()).inflate(R.layout.dialog_fragment_inexact_weight,null);
         dialogText = v.findViewById(R.id.dialogText);
-        dialogText.setText("The closest estimate with the available plates is " + estimatedWeight);
+
+        dialogText.setText("The closest estimate with the available plates is " + LiftingCalculations.desiredFormat(estimatedWeight));
 
 
         return new AlertDialog.Builder(getActivity())
