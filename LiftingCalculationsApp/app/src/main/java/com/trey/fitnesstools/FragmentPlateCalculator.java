@@ -406,7 +406,6 @@ public class FragmentPlateCalculator extends Fragment
         public ResultHolder onCreateViewHolder(ViewGroup parent, int viewType)
         {
             LayoutInflater inflater = LayoutInflater.from(getActivity());
-            Log.d("b4nny","line execute");
             View view = inflater.inflate(R.layout.view_holder_result,parent,false);
             ResultHolder holder = new ResultHolder(view);
             return holder;
