@@ -9,7 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import android.widget.Toast;
+
+
+
 
 
 public class ActivityRepMaxCalculator extends AppCompatActivity {
@@ -134,7 +136,7 @@ public class ActivityRepMaxCalculator extends AppCompatActivity {
     private void getRepMax()
     {
         repMaxOutput = LiftingCalculations.repMax(desiredRepMax, weightLifted, repsPerformed);
-        txtViewOutput.setText(Double.toString(repMaxOutput) + " is your " + Integer.toString(desiredRepMax) + " rep max.");
+        txtViewOutput.setText(LiftingCalculations.desiredFormat(repMaxOutput) + " is your " + Integer.toString(desiredRepMax) + " rep max.");
     }
 
     //get user input from textboxes; return true if successful, false otherwise.

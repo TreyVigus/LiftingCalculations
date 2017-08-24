@@ -1,5 +1,6 @@
 package com.trey.fitnesstools;
 
+import java.text.DecimalFormat;
 
 public class LiftingCalculations
 {
@@ -29,6 +30,14 @@ public class LiftingCalculations
     {
         double deloadedValue = weight - weight*((double)percent/100);
         return (int)Math.round(deloadedValue);
+    }
+
+    //omit unecessary trailing zeros when displaying decimals.
+    public static String desiredFormat(double d)
+    {
+        DecimalFormat format = new DecimalFormat();
+        format.setDecimalSeparatorAlwaysShown(false);
+        return format.format(d);
     }
 
 }

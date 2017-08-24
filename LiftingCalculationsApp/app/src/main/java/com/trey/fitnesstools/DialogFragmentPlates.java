@@ -7,7 +7,6 @@ import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +16,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
+
+
 
 
 public class DialogFragmentPlates extends DialogFragment
@@ -149,7 +150,7 @@ public class DialogFragmentPlates extends DialogFragment
         public void bind(Plate p)
         {
             plate = p;
-            weightText.setText(Double.toString(plate.getWeight()));
+            weightText.setText(LiftingCalculations.desiredFormat(plate.getWeight()));
             checkPlateUsed.setChecked(p.isEnabled());
         }
     }

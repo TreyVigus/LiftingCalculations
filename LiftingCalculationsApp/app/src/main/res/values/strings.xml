@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LiftingTools</string>
+    <string name="app_name">LiftingCalculations</string>
     <string name="btnShowPlatesText">Show Plates</string>
     <string name="editTextEnterWeight">Weight:</string>
     <string name="text_button_calc_weight">Calculate Weight</string>

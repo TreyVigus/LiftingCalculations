@@ -4,11 +4,8 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
-import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -22,6 +19,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.google.gson.Gson;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -90,7 +88,7 @@ public class FragmentPlateCalculator extends Fragment
             }
         }
 
-    }
+     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -101,7 +99,7 @@ public class FragmentPlateCalculator extends Fragment
         //enteredWeight will only be greater than 0 if the user has passed it from another activity.
         if(enteredWeight > 0)
         {
-            txtFullWeight.setText(Double.toString(enteredWeight));
+            txtFullWeight.setText(LiftingCalculations.desiredFormat(enteredWeight));
         }
 
 
@@ -390,7 +388,7 @@ public class FragmentPlateCalculator extends Fragment
         }
         public void bind(double p)
         {
-            resultText.setText(Double.toString(p));
+            resultText.setText(LiftingCalculations.desiredFormat(p));
         }
     }
     public class ResultAdapter extends RecyclerView.Adapter<ResultHolder>
@@ -406,7 +404,6 @@ public class FragmentPlateCalculator extends Fragment
         public ResultHolder onCreateViewHolder(ViewGroup parent, int viewType)
         {
             LayoutInflater inflater = LayoutInflater.from(getActivity());
-            Log.d("b4nny","line execute");
             View view = inflater.inflate(R.layout.view_holder_result,parent,false);
             ResultHolder holder = new ResultHolder(view);
             return holder;

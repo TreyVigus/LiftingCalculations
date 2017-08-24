@@ -105,7 +105,7 @@ public class ActivityDeloadCalculator extends AppCompatActivity
         deloadedWeight = 0;
         weightInput = getIntent().getDoubleExtra(KEY_INTENT_WEIGHT,0);
         if(weightInput > 0)
-            editTextEnterDeloadWeight.setText(Double.toString(weightInput));
+            editTextEnterDeloadWeight.setText(LiftingCalculations.desiredFormat(weightInput));
 
         //If deload percent has been passed from another activity, it will be stored in the intent.
         //if not found, the percent will be 0 (second arg in getIntExtra(...)
