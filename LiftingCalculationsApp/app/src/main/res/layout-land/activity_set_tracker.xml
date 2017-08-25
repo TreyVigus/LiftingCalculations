@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trey.fitnesstools.ActivitySetTracker"
+    tools:layout_editor_absoluteY="73dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_current_set"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline4"
+        app:layout_constraintRight_toLeftOf="@+id/txtViewSetCount"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="42dp" />
+
+    <TextView
+        android:id="@+id/txtViewSetCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="42dp"
+        android:layout_marginRight="66dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnIncrement"
+        android:layout_width="69dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="29dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:srcCompat="@drawable/plus" />
+
+    <ImageButton
+        android:id="@+id/btnDecrement"
+        android:layout_width="69dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/minus"
+        android:layout_marginLeft="26dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        android:layout_marginTop="29dp" />
+
+    <Chronometer
+        android:id="@+id/stopwatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:countDown="false"
+        android:textSize="30sp"
+        app:layout_constraintRight_toLeftOf="@+id/guideline4"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="35dp" />
+
+    <Button
+        android:id="@+id/btnToggleStartStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_start"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="35dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <Button
+        android:id="@+id/btnResetStopwatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_reset"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        android:layout_marginTop="23dp"
+        app:layout_constraintRight_toLeftOf="@+id/guideline4"
+        android:layout_marginRight="30dp"
+        app:layout_constraintLeft_toRightOf="@+id/btnToggleStartStop"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <Button
+        android:id="@+id/zero_button"
+        android:layout_width="234dp"
+        android:layout_height="47dp"
+        android:text="@string/txtZero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline4"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintVertical_bias="0.684" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline4"
+        app:layout_constraintGuide_begin="287dp"
+        android:orientation="vertical" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline5"
+        app:layout_constraintGuide_begin="96dp"
+        android:orientation="horizontal" />
+
+</android.support.constraint.ConstraintLayout>
