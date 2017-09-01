@@ -42,13 +42,13 @@ public class ActivityRepMaxCalculator extends AppCompatActivity {
         repMaxOutput = 0;
 
         desiredRepMaxBar = (SeekBar) findViewById(R.id.seekBar_rep_max);
-        desiredRepMaxBar.setProgress(desiredRepMax);
         desiredRepMaxBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener()
         {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progressValue, boolean b)
             {
-                desiredRepMax = progressValue;
+                //seek bar progress goes from 0 to 19, but we dont want the 0, so we add one to the progress value so that the progress is really 1 to 20.
+                desiredRepMax = progressValue + 1;
                 setTextViewRepMaxTypeInput();
 
                 //if the input from the textboxes is valid, compute the rep max
