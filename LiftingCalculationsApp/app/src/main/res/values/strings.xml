@@ -5,7 +5,7 @@
     <string name="text_button_calc_weight">Calculate Weight</string>
     <string name="text_bar_weight">Bar Weight:</string>
     <string name="text_result_label">Plates you\'ll need on one side of the bar: </string>
-    <string name="text_plate_type_label">Plates in use: </string>
+    <string name="text_plate_type_label">Your Plates: </string>
     <string name="text_enter_new_plate">Enter plate to add </string>
     <string name="title_settings">Manage Plates </string>
     <string name="text_weight_lifted">Weight lifted: </string>
