@@ -20,6 +20,7 @@ public class PlateList extends ArrayList<Plate>
         add(new Plate(45,Plate.PLATE_ENABLED,Plate.NOT_CUSTOM_PLATE));
         add(new Plate(35,Plate.PLATE_ENABLED,Plate.NOT_CUSTOM_PLATE));
         add(new Plate(25,Plate.PLATE_ENABLED,Plate.NOT_CUSTOM_PLATE));
+        add(new Plate(20,Plate.PLATE_DISABLED,Plate.NOT_CUSTOM_PLATE));
         add(new Plate(10,Plate.PLATE_ENABLED,Plate.NOT_CUSTOM_PLATE));
         add(new Plate(5,Plate.PLATE_ENABLED,Plate.NOT_CUSTOM_PLATE));
         add(new Plate(2.5,Plate.PLATE_ENABLED,Plate.NOT_CUSTOM_PLATE));
